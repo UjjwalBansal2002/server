@@ -14,9 +14,9 @@ app.use(cors({
   credentials: true,
 }));
 
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use(express.json());
-app.use("/uploads", express.static("uploads")); // serve uploaded PDFs
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+// app.use("/uploads", express.static("uploads")); // serve uploaded PDFs
 
 // Routes
 const materialRoutes = require("./routes/materialRoutes");

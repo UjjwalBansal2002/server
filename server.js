@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173", // allow frontend origin
+  origin: ["http://localhost:5173","https://frontend-silk-zeta-68.vercel.app"], // allow frontend origin
   credentials: true
 }));
 

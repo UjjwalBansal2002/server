@@ -7,8 +7,8 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:5173","frontend-seven-bice-40.vercel.app"], // allow frontend origin
-  credentials: true
+  origin: ["http://localhost:5173", "https://frontend-seven-bice-40.vercel.app"],
+  credentials: true,
 }));
 
 app.use(express.json());
